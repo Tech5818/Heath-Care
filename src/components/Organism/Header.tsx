@@ -1,19 +1,14 @@
 import React from "react";
 import styled from "styled-components"
-import MainColor from "./textColor/MainColor"
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "../Atom/Logo";
+import UserIcon from "../Atom/UserIcon";
 
 const Header:React.FC = () => {
     return(
         <>
             <StyledHeader>
-                <StyledLogo>
-                    Health <MainColor>Core</MainColor>
-                </StyledLogo>
-                <FontAwesomeIcon icon={faUser}
-                style={{position:"absolute",right:"27px"}}
-                />
+                <Logo/>
+                <UserIcon/>
             </StyledHeader>
         </>
     )
@@ -29,9 +24,6 @@ const StyledHeader = styled.header`
     font-family: 'NPSfontBold';
     font-size: 18px;
     position: relative;
-`;
-const StyledLogo = styled.div`
-
 `;
 
 export default Header
