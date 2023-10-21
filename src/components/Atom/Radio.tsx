@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Span from "./Span";
 
-const Radio: React.FC<{name:string, word:string}> = ({name, word}) => {
+const Radio: React.FC<{name:string, word:string, fontColor: string, onRadioChange: () => void}> = ({name, word, fontColor, onRadioChange}) => {
     return (
         <>
             <StyledLabel>
-                <StyledInput type="radio" name={name} />
-                <Span>{word}</Span>
+                <StyledInput type="radio" name={name} onChange={onRadioChange} />
+                <Span fontSize="14" fontColor={fontColor} font="regular">{word}</Span>
             </StyledLabel>
         </>
     )

@@ -9,10 +9,10 @@ const ButtonExplanationArea: React.FC = () => {
             <StyledButtonExplanationArea>
                 <Button />
                 <StyledExplanation>
-                    <Span>
+                    <Span fontSize="12" fontColor="#ccc" font="bold">
                         해당 정보들은 사용자 정보 수정 페이지를
                     </Span>
-                    <Span>
+                    <Span fontSize="12" fontColor="#ccc" font="bold">
                         통해 모두 다시 설정 할 수 있습니다.
                     </Span>
                 </StyledExplanation>
@@ -25,6 +25,7 @@ const StyledButtonExplanationArea = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 `;
 const StyledExplanation = styled.div`
     display: flex;

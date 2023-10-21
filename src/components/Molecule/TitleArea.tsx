@@ -7,14 +7,14 @@ const TitleArea: React.FC = () => {
     return (
         <>
             <StyeldTitleArea>
-                <StyledLogo />
+                <Logo fontSize="32"/>
                 <StyeldTitleExplanation>
-                    <StyledSpan>
+                    <Span fontSize="20" fontColor="#000" font="regular">
                         처음 접속 하셨군요
-                    </StyledSpan>
-                    <StyledSpan>
+                    </Span>
+                    <Span fontSize="20" fontColor="#000" font="regular">
                         정보를 입력해 주세요.
-                    </StyledSpan>
+                    </Span>
                 </StyeldTitleExplanation>
             </StyeldTitleArea>
         </>
@@ -26,17 +26,12 @@ const StyeldTitleArea = styled.div`
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    margin-bottom: 10px;
 `;
 const StyeldTitleExplanation = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;
-const StyledLogo = styled(Logo)`
-    font-size: 20px;
-`;
-const StyledSpan = styled(Span)`
-    font-size: 20px;
 `;
 
 export default TitleArea;

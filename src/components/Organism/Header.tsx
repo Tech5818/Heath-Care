@@ -7,7 +7,7 @@ const Header:React.FC = () => {
     return(
         <>
             <StyledHeader>
-                <Logo/>
+                <Logo fontSize="18" />
                 <UserIcon/>
             </StyledHeader>
         </>

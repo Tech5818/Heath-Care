@@ -10,5 +10,5 @@ export const firstSlice = createSlice({
     }
 })
 
-export const {setFirst} = firstSlice.actions
-export default firstSlice.reducer
+export const {setFirst} = firstSlice.actions;
+export default firstSlice.reducer;

@@ -2,18 +2,19 @@ import React from "react"
 import styled from "styled-components"
 import MainColor from "../textColor/MainColor"
 
-const Logo :React.FC = () => {
+const Logo :React.FC<{fontSize : string}> = ({fontSize}) => {
     return (
         <>
-            <StyledLogo>
-                    Health <MainColor>Core</MainColor>
+            <StyledLogo fontSize={fontSize}>
+                    Health <MainColor>Care</MainColor>
             </StyledLogo>
         </>
     )
 }
 
-const StyledLogo = styled.div `
-    font-size: 18px;
+const StyledLogo = styled.div<{fontSize: string}> `
+    font-size: ${(props): string => `${props.fontSize}px`};
+    font-family: 'NPSfontBold';
 `;
 
 export default Logo;

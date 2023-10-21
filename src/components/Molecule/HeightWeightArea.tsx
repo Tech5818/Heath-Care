@@ -7,7 +7,7 @@ const HeightWeightArea: React.FC = () => {
     return (
         <>
             <StyledHeightWeightArea>
-                <Span>키 / 몸무게</Span>
+                <Span fontSize="14" fontColor="#000" font="regular">키 / 몸무게</Span>
                 <StyledInputArea>
                     <Input placeholder="키를 입력해 주세요." />
                     <Input placeholder="몸무게를 입력해 주세요." />
@@ -21,6 +21,7 @@ const StyledHeightWeightArea = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 15px;
 `;
 const StyledInputArea = styled.div`
     display: flex;
