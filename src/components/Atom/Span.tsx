@@ -11,14 +11,14 @@ interface SpanProps {
 const Span: React.FC<SpanProps> = ({children, fontSize, fontColor, font}) => {
     return (
         <>
-            <StyledSpan fontSize = {fontSize} fontColor={fontColor} font={font}>{children}</StyledSpan>
+            <StyledSpan fontSize = {fontSize} fontcolor={fontColor} font={font}>{children}</StyledSpan>
         </>
     )
 }
 
-const StyledSpan = styled.span<{fontSize: string, fontColor: string, font: string}>`
+const StyledSpan = styled.span<{fontSize: string, fontcolor: string, font: string}>`
     font-size: ${(props): string => `${props.fontSize}px`};
-    color: ${(props) : string => `${props.fontColor}`};
+    color: ${(props) : string => `${props.fontcolor}`};
     ${(props) => 
         props.font === "regular" ? `font-family: 'NPSfontRegular';` : 
         props.font === "bold" ? `font-family: 'NPSfontBold';` : 

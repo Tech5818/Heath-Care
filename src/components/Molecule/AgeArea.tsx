@@ -8,7 +8,7 @@ const AgeArea: React.FC = () => {
         <>
             <StyeldAgeArea>
                 <Span fontSize="14" fontColor="#000" font="regular">나이</Span>
-                <Input placeholder="이름을 입력해 주세요" />
+                <Input placeholder="이름을 입력해 주세요" name="age" />
             </StyeldAgeArea>
         </>
     )

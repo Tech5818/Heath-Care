@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Input: React.FC<{placeholder: string, onChange?:(evnet: React.ChangeEvent<HTMLInputElement>) => void}> = ({placeholder, onChange}) => {
+const Input: React.FC<{placeholder: string, onChange?:(evnet: React.ChangeEvent<HTMLInputElement>) => void, name: string}> = ({placeholder, onChange, name}) => {
     return (
         <>
-            <StyledInput type="text" placeholder={placeholder ? placeholder : ""} onChange={onChange} />
+            <StyledInput type="text" placeholder={placeholder ? placeholder : ""} onChange={onChange} name={name}/>
         </>
     )
 }

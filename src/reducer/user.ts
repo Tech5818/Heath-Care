@@ -10,13 +10,13 @@ const initialStateValue = {
 
 export const userSlice = createSlice({
     name:"user",
-    initialState: {value: initialStateValue},
+    initialState: {value: initialStateValue },
     reducers: {
         setInfo: (state, action) => {
             state.value = action.payload;
-        }
-    }
-})
+        },
+    },
+});
 
 export const {setInfo} = userSlice.actions;
 export default userSlice.reducer;

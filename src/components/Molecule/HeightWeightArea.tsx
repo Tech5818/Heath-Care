@@ -9,8 +9,8 @@ const HeightWeightArea: React.FC = () => {
             <StyledHeightWeightArea>
                 <Span fontSize="14" fontColor="#000" font="regular">키 / 몸무게</Span>
                 <StyledInputArea>
-                    <Input placeholder="키를 입력해 주세요." />
-                    <Input placeholder="몸무게를 입력해 주세요." />
+                    <Input placeholder="키를 입력해 주세요." name="height" />
+                    <Input placeholder="몸무게를 입력해 주세요." name="weight"/>
                 </StyledInputArea>
             </StyledHeightWeightArea>
         </>
